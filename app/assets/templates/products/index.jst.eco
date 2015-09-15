@@ -1,0 +1,11 @@
+<h1>Products</h1>
+
+
+<%= @products.length %>
+
+<ul>
+<% for product in @products.models: %>
+  <li><%= product.get('name') %></li>
+<% end %>
+</ul>
+
