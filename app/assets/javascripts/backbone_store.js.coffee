@@ -4,7 +4,6 @@ window.BackboneStore =
   Views: {}
   Routers: {}
   initialize: -> 
-    #alert 'Hello from Backbone!'
     new BackboneStore.Routers.Products()
     Backbone.history.start()
 

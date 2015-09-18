@@ -1,11 +1,9 @@
 <h1>Products</h1>
 
+<form id="new_product">
+  <input type="text" name="name" id="new_product_name">
+  <input type="submit" value="Add">
+</form>
 
-<%= @products.length %>
-
-<ul>
-<% for product in @products.models: %>
-  <li><%= product.get('name') %></li>
-<% end %>
-</ul>
+<ul id="products"></ul>
 

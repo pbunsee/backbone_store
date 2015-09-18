@@ -5,13 +5,12 @@ class BackboneStore.Routers.Products extends Backbone.Router
 
   initialize: ->
     @collection = new BackboneStore.Collections.Products()
-    @collection.fetch()
+    @collection.fetch({reset: true})
 
   index: ->
-   # alert "home page for products"
    view = new BackboneStore.Views.ProductsIndex(collection: @collection)
    $('#container').html(view.render().el)
 
   show: (id) ->
-   alert "show product #{id} "
+   alert "Product #{id} "
 
